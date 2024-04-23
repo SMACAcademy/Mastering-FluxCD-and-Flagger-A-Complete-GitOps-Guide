@@ -1,0 +1,40 @@
+flux check --pre
+
+flux check
+
+flux install
+
+flux create source git webapp-latest \
+  --url=https://github.com/smacacademy4all/podinfo \
+  --branch=master \
+  --interval=3m
+
+flux get sources git
+
+flux reconcile source git webapp-latest
+
+flux export source git --all > sources.yaml
+
+flux create kustomization webapp-dev \
+  --target-namespace=default \
+  --source=webapp-latest \
+  --path="./deploy/webapp/" \
+  --prune=true \
+  --interval=5m \
+  --health-check="Deployment/backend.webapp" \
+  --health-check="Deployment/frontend.webapp" \
+  --health-check-timeout=2m
+
+flux reconcile kustomization webapp-dev --with-source
+
+flux suspend kustomization webapp-dev
+
+flux resume kustomization webapp-dev
+
+flux export kustomization --all > kustomizations.yaml
+
+flux delete kustomization webapp-dev
+flux delete source git webapp-latest
+
+flux uninstall
+
