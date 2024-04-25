@@ -17,3 +17,11 @@ echo "cm9vdHVzZXI=" | base64 --decode
 echo "cm9vdHBhc3MxMjM=" | base64 --decode
 
 
+
+kubectl apply -f flux-kustomization.yaml
+
+kubectl get bucket -n flux-system
+kubectl get kustomization -n flux-system
+
+kubectl get pods
+
