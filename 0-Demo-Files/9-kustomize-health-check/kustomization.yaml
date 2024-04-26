@@ -5,7 +5,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 5m
-  path: "./kustomize/redis"
+  path: "./0-Demo-Files/9-kustomize-health-check/redis"
   prune: true
   sourceRef:
     kind: GitRepository
@@ -24,7 +24,7 @@ spec:
   interval: 5m
   dependsOn:
     - name: backend
-  path: "./kustomize/podinfo"
+  path: "./0-Demo-Files/9-kustomize-health-check/podinfo"
   prune: true
   sourceRef:
     kind: GitRepository
