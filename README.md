@@ -1,6 +1,6 @@
 # Mastering-FluxCD-and-Flagger-A-Complete-GitOps-Guide
 
-** Register for the course ** at https://www.udemy.com/course/mastering-fluxcd-and-flagger-a-complete-gitops-guide/?referralCode=F7643B8BBC2428D5F133
+** Register for Mastering FluxCD and Flagger: A Complete GitOps course ** at https://www.udemy.com/course/mastering-fluxcd-and-flagger-a-complete-gitops-guide/?referralCode=F7643B8BBC2428D5F133
 
 ![image](https://github.com/user-attachments/assets/cc036849-62cd-40a4-890c-813fba84cdab)
 
@@ -47,4 +47,4 @@ Enroll now and start your journey to mastering GitOps with FluxCD and Flagger!
 
 Join us to transform your deployment strategies and advance your career in DevOps and cloud-native technologies!
 
-** Register for the course ** at https://www.udemy.com/course/mastering-fluxcd-and-flagger-a-complete-gitops-guide/?referralCode=F7643B8BBC2428D5F133
+** Register for Mastering FluxCD and Flagger: A Complete GitOps Guide course ** at https://www.udemy.com/course/mastering-fluxcd-and-flagger-a-complete-gitops-guide/?referralCode=F7643B8BBC2428D5F133
